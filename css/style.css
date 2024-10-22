@@ -19,10 +19,10 @@ Grey dark 3: #999
   --color-primary: #EB2F64;
   --color-primary-light: #FF3366;
   --color-primary-dark: #BA265D;
-  --color-gey-light-1: #FAF9F9;
-  --color-gey-light-2: #F4F2F2;
-  --color-gey-light-3: #F0EEEE;
-  --color-gey-light-4: #CCC;
+  --color-grey-light-1: #FAF9F9;
+  --color-grey-light-2: #F4F2F2;
+  --color-grey-light-3: #F0EEEE;
+  --color-grey-light-4: #CCC;
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
@@ -49,6 +49,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-2);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
