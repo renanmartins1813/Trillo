@@ -29,6 +29,8 @@
 
 .hotel-view {
   background-color: var(--color-white);
-
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
   flex: 1;
 }
