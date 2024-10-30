@@ -170,12 +170,23 @@ body {
   height: 100%;
   width: 3px;
   background-color: var(--color-primary);
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, backgroun-color 0.1s;
+}
+.side-nav__item:hover::before, .side-nav__item--active::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+.side-nav__item:active::before {
+  background-color: var(--color-primary-light);
 }
 .side-nav__link:link, .side-nav__link:visited {
   color: var(--color-grey-light-1);
   text-decoration: none;
   text-transform: uppercase;
   padding: 1.5rem 3rem;
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
 }
@@ -190,6 +201,14 @@ body {
   color: var(--color-grey-light-4);
   text-align: center;
   pad: 2.5rem;
+}
+
+.gallery {
+  display: flex;
+}
+.gallery__photo {
+  width: 100%;
+  display: block;
 }
 
 .container {

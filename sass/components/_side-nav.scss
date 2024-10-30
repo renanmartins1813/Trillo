@@ -19,6 +19,21 @@
     height: 100%;
     width: 3px;
     background-color: var(--color-primary);
+    transform: scaleY(0);
+    transition:
+      transform 0.2s,
+      width 0.4s cubic-bezier(1, 0, 0, 1) .2s, // https://cubic-bezier.com/#1,0,0,1
+      backgroun-color 0.1s;
+  }
+
+  &__item:hover::before,
+  &__item--active::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
+  &__item:active::before {
+    background-color: var(--color-primary-light);
   }
 
   &__link:link,
@@ -28,6 +43,8 @@
     text-transform: uppercase;
     //display: block;
     padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 1;
 
     display: flex;
     align-items: center;
