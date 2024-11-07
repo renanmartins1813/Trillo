@@ -1,0 +1,27 @@
+.bnt {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--color-white);
+  border: none;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+
+  &__visible {
+    display: inline-block;
+    padding: 2rem 7.5rem;
+
+    &:hover {}
+  }
+
+  &__invisible {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 2rem 7.5rem;
+    left: 0;
+    top: -100%;
+
+    &:hover {}
+  }
+}
