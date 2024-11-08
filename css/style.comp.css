@@ -420,12 +420,45 @@ body {
 }
 
 .bnt {
+  position: relative;
+  overflow: hidden;
   font-size: 1.5rem;
   font-weight: 300;
+  text-transform: uppercase;
   color: var(--color-white);
   border: none;
   border-radius: 100px;
-  background-color: red;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  cursor: pointer;
+}
+.bnt > * {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+.bnt__visible {
+  padding: 2rem 7.5rem;
+}
+.bnt__invisible {
+  position: absolute;
+  padding: 2rem 0;
+  left: 0;
+  top: -100%;
+}
+.bnt:hover {
+  background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+  color: black;
+}
+.bnt:hover .bnt__visible {
+  transform: translateY(100%);
+}
+.bnt:hover .bnt__invisible {
+  top: 0;
+}
+.bnt:focus {
+  outline: none;
+  animation: pulsate 1s infinite;
 }
 
 .container {
