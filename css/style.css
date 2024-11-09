@@ -284,6 +284,11 @@ body {
     margin-top: 0;
   }
 }
+@media only screen and (max-width: 600px) {
+  .side-nav {
+    font-size: 1.2rem;
+  }
+}
 .side-nav__item {
   position: relative;
 }
@@ -351,6 +356,12 @@ body {
     margin-bottom: 0.7rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .side-nav__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
 .legal {
   font-size: 1.2rem;
   color: var(--color-grey-light-4);
@@ -387,6 +398,12 @@ body {
   .overview__heading {
     font-size: 1.8rem;
     padding: 1.25rem 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .overview__heading {
+    font-size: 1.25rem;
+    padding: 1rem 1rem;
   }
 }
 .overview__stars {
