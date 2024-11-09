@@ -58,6 +58,11 @@
   @media only screen and (max-width: 900px) {
     padding: 3rem;
   }
+
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -72,6 +77,11 @@
   @media only screen and (max-width: 900px) {
     padding: 2rem;
     margin-right: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-right: 0;
     margin-bottom: 3rem;
   }
 }
