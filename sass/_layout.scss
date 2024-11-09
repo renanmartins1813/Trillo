@@ -20,6 +20,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 500px) {
+    height: 12rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
 }
 
 .content {
