@@ -3,4 +3,9 @@
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem;
+
+
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
 }
