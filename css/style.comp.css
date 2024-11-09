@@ -84,6 +84,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 500px) {
+  .header {
+    height: 12rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+}
 
 .content {
   display: flex;
@@ -170,6 +177,12 @@ body {
   display: flex;
   justify-content: center;
   align-self: center;
+}
+@media only screen and (max-width: 500px) {
+  .search {
+    flex: 0 0 90%;
+    order: 1;
+  }
 }
 .search__input {
   font-family: inherit;
